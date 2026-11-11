@@ -1,7 +1,13 @@
-# Saltline — local copy
+# Saltline: Undertow
 
-Source: [original Claude artifact](https://claude.ai/artifact/BGY1SztrAYcJQHSsnHHGmp).
+A standalone follow-up version of the Saltline browser game. It keeps the original self-contained Three.js harbor and controls, with a new rising-tide briefing, Undertow title treatment, and denser enemy waves.
 
-This repository is a self-contained local copy. The game code is bundled inline in `index.html`, and all three font families are included under `fonts/`. It has no runtime CDN imports or external asset dependencies. `run.sh` starts a Python server bound to `127.0.0.1`; the game itself makes no outside connections.
+Source baseline: [Saltline Claude artifact](https://claude.ai/artifact/BGY1SztrAYcJQHSsnHHGmp). The artifact frame was unavailable during this update, so the fork was compared with the local original tracked in the existing GitHub repository.
 
-Run `./run.sh` and open the local URL it prints. It starts at port 8000 and automatically tries the next available port if needed. Set `PORT=9000 ./run.sh` to choose a different starting port. Press Ctrl+C to stop the server.
+## Run
+
+Run `./run.sh` and open the local URL it prints. It serves on `127.0.0.1` and tries the next free port if the default is occupied.
+
+## Controls
+
+WASD move, mouse look/fire, right mouse aim, R reload, E cut relays, Space jump, Shift sprint, C crouch, Escape pause. Touch and gamepad controls are also supported.
